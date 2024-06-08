@@ -9,13 +9,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface LimitRepoJPA extends JpaRepository<Limit, Long> {
+public interface LimitRepository extends JpaRepository<Limit, Long> {
 
     @NonNull
     List<Limit> findAll();
 
-    Optional<Limit> findByUserId(Long userId);
+//    Optional<Limit> findByUserId(Long userId);
 
-//    @Override
-//    <S extends Limit> S save(S entity);
+    Limit findByUserId(Long userId);
+
 }

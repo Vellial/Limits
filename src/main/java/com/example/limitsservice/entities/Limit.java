@@ -17,15 +17,11 @@ public class Limit {
     @Column(name = "limit")
     private Double limit;
 
-//    @Column(name = "timeupdated")
-//    private LocalDateTime timeupdated;
-
     public Limit() {}
 
     public Limit(Long userId, Double i) {
         this.userId = userId;
         this.limit = i;
-//        this.timeupdated = LocalDateTime.now();
     }
 
     public void setId(Long id) {
@@ -35,14 +31,6 @@ public class Limit {
     public Long getId() {
         return id;
     }
-
-//    public LocalDateTime getTimeupdated() {
-//        return timeupdated;
-//    }
-//
-//    public void setTimeupdated(LocalDateTime timeupdated) {
-//        this.timeupdated = timeupdated;
-//    }
 
     public Long getUserId() {
         return userId;
